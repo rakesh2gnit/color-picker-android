@@ -73,7 +73,7 @@ At your top-level `build.gradle` file:
 And then at your project `build.gradle` file:
 
     dependencies {
-        implementation 'com.github.rakesh2gnit:richtexteditorandroid:1.1.0'
+        implementation 'com.github.rakesh2gnit:richtexteditorandroid:1.0.0'
     }
     
 Done!
