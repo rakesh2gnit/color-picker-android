@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         select_color.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
-                new ColorPickerPopup.Builder(MainActivity.this)
+                new ColorPickerDialog.Builder(MainActivity.this)
                         .initialColor(Color.RED) // Set initial color
                         .defaultColor(Color.BLACK) // Set Default color
                         .enableBrightness(true) // Enable brightness slider or not
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                         .showIndicator(true)
                         .showValue(true)
                         .build()
-                        .show(v, new ColorPickerPopup.ColorPickerObserver() {
+                        .show(v, new ColorPickerDialog.ColorPickerObserver() {
                             @Override
                             public void onColorPicked(int color) {
                                 v.setBackgroundColor(color);
